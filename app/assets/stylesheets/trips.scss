@@ -1,0 +1,148 @@
+.trip_entry {
+  z-index: 11;
+
+  float: left;
+  display: inline;
+
+  width: 250px;
+  height: 300px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+.trip_index_header {
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.trip_header {
+  width: 230px;
+  padding: 6px 10px 0;
+
+  font-size: 1.3em;
+  font-weight: bold;
+  color: blue;
+  text-align: center;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.trip_tag {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.trip_dates {
+  text-align: center;
+}
+
+.trip_links {
+  text-align: center;
+}
+
+.trip_price {
+  font-weight: bold;
+  text-align: center;
+}
+
+.rating {
+  position: relative;
+  margin-bottom: 10px;
+
+  .stars {
+    position: relative;
+    height: 22px;
+    margin-bottom: 0;
+
+    strong {
+      @extend .stat !optional;
+
+      margin-left: 116px;
+      line-height: 22px;
+    }
+  }
+
+  .star,
+  .empty,
+  .full {
+    background: transparent url(stars.png) top left no-repeat;
+  }
+
+  .empty,
+  .full {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+    display: block;
+
+    width: 110px;
+    height: 22px;
+  }
+
+  .star {
+    $star_width: 22px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+    display: block;
+
+    height: 22px;
+
+    text-indent: -999px;
+
+    background-position: -100px -200px;
+
+    &:hover {
+      background-position: 0% 50%;
+    }
+
+    &.rating_1 {
+      z-index: 1005;
+      width: $star_width * 1;
+    }
+
+    &.rating_2 {
+      z-index: 1004;
+      width: $star_width * 2;
+    }
+
+    &.rating_3 {
+      z-index: 1003;
+      width: $star_width * 3;
+    }
+
+    &.rating_4 {
+      z-index: 1002;
+      width: $star_width * 4;
+    }
+
+    &.rating_5 {
+      z-index: 1001;
+      width: $star_width * 5;
+    }
+  }
+
+  .empty {
+    z-index: 101;
+    background-position: bottom left;
+  }
+
+  .full {
+    z-index: 102;
+    width: 0;
+  }
+}

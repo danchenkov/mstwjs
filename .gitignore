@@ -156,3 +156,6 @@ dist
 .keep
 .DS_Store
 .localized
+
+/app/assets/builds/*
+!/app/assets/builds/.keep

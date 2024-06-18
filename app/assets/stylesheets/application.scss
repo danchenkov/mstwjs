@@ -1,0 +1,10 @@
+@use "screen";
+@use "trips";
+@use "friends";
+@use "purchases";
+@use "scaffold";
+@use "user_preferences";
+
+.hidden {
+    display: none;
+}
