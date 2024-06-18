@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :friends
+  resources :trip_features
+  resources :user_preferences
+  resources :purchases
+  resources :trips
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
