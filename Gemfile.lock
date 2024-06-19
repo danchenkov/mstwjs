@@ -155,7 +155,7 @@ GEM
     marcel (1.0.4)
     matrix (0.4.2)
     mini_mime (1.1.5)
-    minitest (5.23.1)
+    minitest (5.24.0)
     msgpack (1.7.2)
     mutex_m (0.2.0)
     net-imap (0.4.13)
@@ -295,6 +295,7 @@ PLATFORMS
   arm-linux
   arm64-darwin
   x86-linux
+  x86_64-darwin-21
   x86_64-darwin-22
   x86_64-linux
 
